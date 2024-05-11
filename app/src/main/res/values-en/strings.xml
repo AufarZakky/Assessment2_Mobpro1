@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Food Market</string>
+    <string name="tentang_aplikasi">About us</string>
+    <string name="copyright">I made this application for Assessment 2. This app is an app for users who want to sell their food.</string>
+    <string name="list_kosong">Food is not yet available</string>
+    <string name="x_diklik">%1$s onclick</string>
+    <string name="tambah_makanan">Add food</string>
+    <string name="nama">Food Name</string>
+    <string name="harga">Price</string>
+    <string name="kembali">Back</string>
+    <string name="simpan">Save</string>
+    <string name="edit_makanan">Food Edit</string>
+    <string name="invalid">food name, price food, and the type of food should not be empty.</string>
+    <string name="lainnya">More Options</string>
+    <string name="hapus">Delete data food</string>
+    <string name="hapus_catatan">Delete food?</string>
+    <string name="tombol_hapus">Are you sure you want to delete this ?</string>
+    <string name="tombol_batal">Cancel</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="option_1">Indonesian food</string>
+    <string name="option_2">Korean food</string>
+    <string name="option_3">Japan food</string>
+    <string name="option_4">Middle Eastern Food</string>
+    <string name="option_5">Western Food</string>
+    <string name="tombol_hapus2">Delete</string>
+    <string name="bagikan">Share</string>
+    <string name="bagikan_template">Food name: %1$s\nPrice: %2$s\nFood Type: %3$s</string>
+</resources>

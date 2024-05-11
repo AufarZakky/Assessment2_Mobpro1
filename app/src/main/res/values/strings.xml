@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Jual Makanan</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="copyright">Aplikasi ini saya buat untuk Assessment 2. Aplikasi ini adalah aplikasi bagi pengguna yang ingin menjual makananannya.</string>
+    <string name="list_kosong">Makanan belum tersedia</string>
+    <string name="x_diklik">%1$s diklik</string>
+    <string name="tambah_makanan">Tambah Makanan</string>
+    <string name="nama">Nama makanan</string>
+    <string name="harga">Harga</string>
+    <string name="kembali">Kembali</string>
+    <string name="simpan">Simpan</string>
+    <string name="edit_makanan">Ubah Makanan</string>
+    <string name="invalid">Nama makanan,harga makanan, dan jenis makanan tidak boleh kosong.</string>
+    <string name="lainnya">Opsi lainnya</string>
+    <string name="hapus">Hapus data Makanan</string>
+    <string name="hapus_catatan">Hapus makanan?</string>
+    <string name="tombol_hapus">Apakah anda yakin ingin menghapus ini ?</string>
+    <string name="tombol_hapus2">Hapus</string>
+    <string name="tombol_batal">Batal</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="option_1">Makanan Indonesia</string>
+    <string name="option_2">Makanan Korea</string>
+    <string name="option_3">Makanan Jepang</string>
+    <string name="option_4">Makanan Timur tengah</string>
+    <string name="option_5">Makanan Barat</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">Nama makanan: %1$s\nHarga: %2$s\nJenis Makanan: %3$s</string>
+</resources>
