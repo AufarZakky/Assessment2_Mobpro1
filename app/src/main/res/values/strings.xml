@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Jual Makanan</string>
+    <string name="app_name">Food Market</string>
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
     <string name="copyright">Aplikasi ini saya buat untuk Assessment 2. Aplikasi ini adalah aplikasi bagi pengguna yang ingin menjual makananannya.</string>
     <string name="list_kosong">Makanan belum tersedia</string>

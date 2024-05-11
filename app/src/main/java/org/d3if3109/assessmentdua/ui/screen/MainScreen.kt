@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,9 +23,12 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.foundation.lazy.staggeredgrid.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Divider
@@ -43,8 +47,10 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -95,8 +101,8 @@ fun MainScreen(navController: NavHostController) {
                     Text(text = stringResource(id = R.string.app_name))
                 },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.primary,
+                    containerColor = colorResource(id = R.color.wrna1),
+                    titleContentColor = colorResource(id = R.color.white),
                 ),
                 actions = {
                     Row(
@@ -116,7 +122,7 @@ fun MainScreen(navController: NavHostController) {
                                     if (showList) R.string.grid
                                     else R.string.list
                                 ),
-                                tint = MaterialTheme.colorScheme.primary
+                                tint = colorResource(id = R.color.white)
                             )
                         }
                         IconButton(onClick = {
@@ -125,7 +131,7 @@ fun MainScreen(navController: NavHostController) {
                             Icon(
                                 imageVector = Icons.Outlined.Info,
                                 contentDescription = stringResource(R.string.tentang_aplikasi),
-                                tint = MaterialTheme.colorScheme.primary
+                                tint = colorResource(id = R.color.white)
                             )
                         }
                     }
@@ -133,16 +139,19 @@ fun MainScreen(navController: NavHostController) {
             )
         },
         floatingActionButton = {
-            FloatingActionButton(
+            Button(
                 onClick = {
                     navController.navigate(Screen.FormBaru.route)
-                }
+                },
+                colors = ButtonDefaults.buttonColors(colorResource(id = R.color.wrna1)),
+                border = null,
+                modifier = Modifier.padding(16.dp)
             ) {
                 Icon(
                     imageVector = Icons.Filled.Add,
                     contentDescription = stringResource(id = R.string.tambah_makanan),
-                    tint = MaterialTheme.colorScheme.primary
-                )
+                    tint = colorResource(id = R.color.white))
+
             }
         }
 
@@ -165,7 +174,7 @@ fun ScreenContent(showList: Boolean, modifier: Modifier, navController: NavHostC
                 .fillMaxSize()
                 .padding(16.dp),
             verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Image(
                 painter = painterResource(id = R.drawable.bakmi3),
